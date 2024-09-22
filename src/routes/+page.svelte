@@ -30,7 +30,12 @@
         <ul>
           {#each group.services as service}
             <li>
-              <a href="{service.link}" title="{service.description}">{service.name}</a>
+              <a href="{service.link}" title="{service.description}">
+                {#if service.logo}
+                  <img class="logo" src="{service.logo}" alt="{service.name} logo" />
+                {/if}
+                {service.name}
+              </a>
             </li>
           {/each}
         </ul>
@@ -38,3 +43,10 @@
     {/each}
   </div>
 </div>
+
+<style>
+  .logo {
+    width: 32px;
+    margin-right: 8px;
+  }
+</style>
