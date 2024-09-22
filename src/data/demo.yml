@@ -1,0 +1,88 @@
+groups:
+  - name: Project links
+    description: tech-showcase links
+    services:
+      - name: Repository of tech-showcase
+        description: GitHub repository
+        link: https://github.com/alexengrig/tech-showcase
+        logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
+        tags:
+          - git
+  - name: Git Services
+    services:
+      - name: GitHub
+        link: https://github.com
+        logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
+        tags:
+          - git
+      - name: GitLab
+        link: https://gitlab.com
+        logo: https://images.ctfassets.net/xz1dnu24egyd/3FbNmZRES38q2Sk2EcoT7a/a290dc207a67cf779fc7c2456b177e9f/press-kit-icon.svg
+        tags:
+          - git
+      - name: Bitbucket
+        link: https://www.atlassian.com/software/bitbucket
+        logo: https://wac-cdn.atlassian.com/dam/jcr:6bb63fa2-de51-41f3-aaa5-3e324ee9c74b/Bitbucket-icon-blue.svg
+        tags:
+          - git
+  - name: CI/CD Services
+    services:
+      - name: GitHub Actions
+        link: https://github.com/features/actions
+        logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
+        tags:
+          - ci/cd
+      - name: GitLab CI/CD
+        link: https://docs.gitlab.com/ee/ci/
+        logo: https://images.ctfassets.net/xz1dnu24egyd/3FbNmZRES38q2Sk2EcoT7a/a290dc207a67cf779fc7c2456b177e9f/press-kit-icon.svg
+        tags:
+          - ci/cd
+      - name: Bamboo
+        link: https://www.atlassian.com/software/bamboo
+        logo: https://wac-cdn.atlassian.com/dam/jcr:191fccd3-1faa-454d-ab3c-6b3890d8f326/Bamboo-icon-blue.svg
+        tags:
+          - ci/cd
+      - name: Jenkins
+        link: https://www.jenkins.io
+        logo: https://get.jenkins.io/art/jenkins-logo/256x256/logo.png
+        tags:
+          - ci/cd
+  - name: Track Services
+    services:
+      - name: GitHub Issues
+        link: https://docs.github.com/en/issues
+        logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
+        tags:
+          - tracker
+      - name: GitLab Issues
+        link: https://docs.gitlab.com/ee/user/project/issues/
+        logo: https://images.ctfassets.net/xz1dnu24egyd/3FbNmZRES38q2Sk2EcoT7a/a290dc207a67cf779fc7c2456b177e9f/press-kit-icon.svg
+        tags:
+          - tracker
+      - name: Jira
+        link: https://www.atlassian.com/software/jira
+        logo: https://wac-cdn.atlassian.com/dam/jcr:fa01756d-6dcc-45d1-83ab-696fbfeb074f/Jira-icon-blue.svg
+        tags:
+          - tracker
+      - name: Trello
+        link: https://www.atlassian.com/software/trello
+        logo: https://wac-cdn.atlassian.com/dam/jcr:92ef2643-e896-40fd-908c-92bc119293c4/Trello-icon-blue.svg?cdnVersion=2097
+        tags:
+          - tracker
+  - name: Wiki Services
+    services:
+      - name: GitHub Wiki
+        link: https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis
+        logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
+        tags:
+          - wiki
+      - name: GitLab Wiki
+        link: https://docs.gitlab.com/ee/user/project/wiki/
+        logo: https://images.ctfassets.net/xz1dnu24egyd/3FbNmZRES38q2Sk2EcoT7a/a290dc207a67cf779fc7c2456b177e9f/press-kit-icon.svg
+        tags:
+          - wiki
+      - name: Confluence
+        link: https://www.atlassian.com/software/confluence
+        logo: https://wac-cdn.atlassian.com/dam/jcr:f0fe60cd-469f-4e78-9779-ea4cacfa07e6/Confluence-icon-blue.svg
+        tags:
+          - wiki
