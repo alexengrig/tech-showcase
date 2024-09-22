@@ -15,6 +15,8 @@
   -->
 
 <script lang="ts">
+  import '../app.postcss'
+
   import type { ShowcaseData } from '$lib/types'
   import Group from '$lib/components/Group.svelte'
 
