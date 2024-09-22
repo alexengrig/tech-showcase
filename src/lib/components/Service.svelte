@@ -15,16 +15,25 @@
   -->
 
 <script lang="ts">
-  import type { ShowcaseData } from '$lib/types'
-  import Group from '$lib/components/Group.svelte'
-
-  export let data: ShowcaseData
+  export let name: string
+  export let description: string
+  export let tags: string[]
+  export let logo: string
+  export let link: string
 </script>
 
-<h1>tech-showcase</h1>
+<li>
+  <a href="{link}" title="{description}">
+    {#if logo}
+      <img class="logo" src="{logo}" alt="{name} logo" />
+    {/if}
+    {name}
+  </a>
+</li>
 
-<div>
-  {#each data.groups as group}
-    <Group {...group} />
-  {/each}
-</div>
+<style>
+  .logo {
+    width: 32px;
+    margin-right: 8px;
+  }
+</style>

@@ -15,16 +15,19 @@
   -->
 
 <script lang="ts">
-  import type { ShowcaseData } from '$lib/types'
-  import Group from '$lib/components/Group.svelte'
+  import type { ServiceData } from '$lib/types'
+  import Service from '$lib/components/Service.svelte'
 
-  export let data: ShowcaseData
+  export let name: string
+  export let description: string
+  export let services: ServiceData[]
 </script>
 
-<h1>tech-showcase</h1>
-
 <div>
-  {#each data.groups as group}
-    <Group {...group} />
-  {/each}
+  <h2 title="{description}">{name}</h2>
+  <ul>
+    {#each services as service}
+      <Service {...service} />
+    {/each}
+  </ul>
 </div>
