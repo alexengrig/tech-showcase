@@ -4,7 +4,7 @@ import { skeleton } from '@skeletonlabs/tw-plugin'
 import typography from '@tailwindcss/typography'
 
 export default {
-  darkMode: 'class',
+  darkMode: 'media',
   content: [
     './src/**/*.{html,js,svelte,ts}',
     join(require.resolve('@skeletonlabs/skeleton'),
