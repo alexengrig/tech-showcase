@@ -19,7 +19,7 @@ export interface CopyrightData {
   link: string
 }
 
-export interface ServiceData {
+export interface ItemData {
   name: string
   description?: string
   tags?: string[]
@@ -30,7 +30,7 @@ export interface ServiceData {
 export interface GroupData {
   name: string
   description?: string
-  services: ServiceData[]
+  items: ItemData[]
 }
 
 export interface ShowcaseData {

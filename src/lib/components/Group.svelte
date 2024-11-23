@@ -16,12 +16,12 @@
 
 <script lang="ts">
     import { Accordion, AccordionItem } from '@skeletonlabs/skeleton'
-    import type { ServiceData } from '$lib/types'
-    import Service from '$lib/components/Service.svelte'
+    import type { ItemData } from '$lib/types'
+    import Item from '$lib/components/Item.svelte'
 
     export let name: string
     export let description: string | undefined
-    export let services: ServiceData[]
+    export let items: ItemData[]
 </script>
 
 <div>
@@ -36,14 +36,14 @@
                 {/if}
             </svelte:fragment>
             <svelte:fragment slot="content">
-                <div class="w-full text-token grid grid-cols-1 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 pb-4">
-                    {#each services as service}
-                        <Service
-                                name={service.name}
-                                description={service.description}
-                                tags={service.tags}
-                                logo={service.logo}
-                                link={service.link}
+                <div class="w-full text-token grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pb-4">
+                    {#each items as item}
+                        <Item
+                                name={item.name}
+                                description={item.description}
+                                tags={item.tags}
+                                logo={item.logo}
+                                link={item.link}
                         />
                     {/each}
                 </div>

@@ -5,7 +5,7 @@ copyright:
 groups:
   - name: Project links
     description: tech-showcase links
-    services:
+    items:
       - name: Repository of tech-showcase
         description: GitHub repository
         link: https://github.com/alexengrig/tech-showcase
@@ -13,7 +13,7 @@ groups:
         tags:
           - git
   - name: Git Services
-    services:
+    items:
       - name: GitHub
         link: https://github.com
         logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
@@ -30,7 +30,7 @@ groups:
         tags:
           - git
   - name: CI/CD Services
-    services:
+    items:
       - name: GitHub Actions
         link: https://github.com/features/actions
         logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
@@ -52,7 +52,7 @@ groups:
         tags:
           - ci/cd
   - name: Track Services
-    services:
+    items:
       - name: GitHub Issues
         link: https://docs.github.com/en/issues
         logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
@@ -74,7 +74,7 @@ groups:
         tags:
           - tracker
   - name: Wiki Services
-    services:
+    items:
       - name: GitHub Wiki
         link: https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis
         logo: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png

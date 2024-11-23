@@ -26,7 +26,7 @@
         <Group
                 name={group.name}
                 description={group.description}
-                services={group.services}
+                items={group.items}
         />
     {/each}
 </div>
