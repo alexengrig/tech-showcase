@@ -19,5 +19,5 @@ jobs:
       - name: Build
         uses: docker/build-push-action@v6
         with:
-          tags: alexengrig/tech-showcase:latest
-          push: false
+          tags: alexengrig/tech-showcase:0.1.0-SNAPSHOT
+          push: true
