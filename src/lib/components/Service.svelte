@@ -15,25 +15,29 @@
   -->
 
 <script lang="ts">
+
     export let name: string
-    export let description: string
-    export let tags: string[]
-    export let logo: string
+    export let description: string | undefined
+    export let tags: string[] | undefined
+    export let logo: string | undefined
     export let link: string
 </script>
 
-<li>
-    <a href="{link}" title="{description}">
-        {#if logo}
-            <img class="logo" src="{logo}" alt="{name} logo"/>
+<a class="card card-hover overflow-hidden" href="{link}">
+    <div class="card-header">
+        <img src="{logo}" alt="Logo of {name}" class="h-16"/>
+        <h3 class="h3 mt-4">{name}</h3>
+    </div>
+    <div class="p-4">
+        {#if description}
+            {description}
         {/if}
-        {name}
-    </a>
-</li>
-
-<style>
-    .logo {
-        width: 32px;
-        margin-right: 8px;
-    }
-</style>
+    </div>
+    <div class="card-footer">
+        {#if tags}
+            {#each tags as tag}
+                <span class="chip variant-ghost">{tag}</span>
+            {/each}
+        {/if}
+    </div>
+</a>
