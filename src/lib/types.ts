@@ -14,20 +14,27 @@
  * limitations under the License.
  */
 
+export interface CopyrightData {
+  text: string
+  link: string
+}
+
 export interface ServiceData {
-  name: string;
-  description?: string;
-  tags?: string[];
-  logo?: string;
-  link: string;
+  name: string
+  description?: string
+  tags?: string[]
+  logo?: string
+  link: string
 }
 
 export interface GroupData {
-  name: string;
-  description?: string;
-  services: ServiceData[];
+  name: string
+  description?: string
+  services: ServiceData[]
 }
 
 export interface ShowcaseData {
+  title: string
+  copyright: CopyrightData
   groups: GroupData[]
 }

@@ -15,18 +15,18 @@
   -->
 
 <script lang="ts">
-  import '../app.postcss'
-
   import type { ShowcaseData } from '$lib/types'
   import Group from '$lib/components/Group.svelte'
 
   export let data: ShowcaseData
 </script>
 
-<h1>tech-showcase</h1>
-
-<div>
-  {#each data.groups as group}
-    <Group {...group} />
-  {/each}
+<div class="container mx-auto">
+    {#each data.groups as group}
+        <Group
+                name={group.name}
+                description={group.description}
+                services={group.services}
+        />
+    {/each}
 </div>

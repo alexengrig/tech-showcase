@@ -17,6 +17,9 @@
 <script lang="ts">
     import '../app.postcss'
     import { AppBar, AppShell, autoModeWatcher, LightSwitch } from '@skeletonlabs/skeleton'
+    import type { ShowcaseData } from '$lib/types'
+
+    export let data: ShowcaseData
 </script>
 
 <svelte:head>{@html '<script>(' + autoModeWatcher.toString() + ')();</script>'}</svelte:head>
@@ -25,7 +28,7 @@
     <svelte:fragment slot="header">
         <AppBar>
             <svelte:fragment slot="lead">
-                <strong class="text-xl uppercase">tech-showcase</strong>
+                <strong class="text-xl uppercase">{data.title}</strong>
             </svelte:fragment>
             <svelte:fragment slot="trail">
                 <LightSwitch/>
@@ -33,4 +36,16 @@
         </AppBar>
     </svelte:fragment>
     <slot/>
+    <svelte:fragment slot="footer">
+        <AppBar>
+            <svelte:fragment slot="lead">
+                <a href="{data.copyright.link}">{data.copyright.text}</a>
+            </svelte:fragment>
+            <svelte:fragment slot="trail">
+                <a href="https://github.com/alexengrig/tech-showcase">
+                    Powered by tech-showcase
+                </a>
+            </svelte:fragment>
+        </AppBar>
+    </svelte:fragment>
 </AppShell>
