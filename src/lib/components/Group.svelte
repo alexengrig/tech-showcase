@@ -15,19 +15,19 @@
   -->
 
 <script lang="ts">
-  import type { ServiceData } from '$lib/types'
-  import Service from '$lib/components/Service.svelte'
+    import type { ServiceData } from '$lib/types'
+    import Service from '$lib/components/Service.svelte'
 
-  export let name: string
-  export let description: string
-  export let services: ServiceData[]
+    export let name: string
+    export let description: string
+    export let services: ServiceData[]
 </script>
 
 <div>
-  <h2 title="{description}">{name}</h2>
-  <ul>
-    {#each services as service}
-      <Service {...service} />
-    {/each}
-  </ul>
+    <h2 title="{description}">{name}</h2>
+    <ul>
+        {#each services as service}
+            <Service {...service}/>
+        {/each}
+    </ul>
 </div>

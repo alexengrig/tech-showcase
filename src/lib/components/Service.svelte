@@ -15,25 +15,25 @@
   -->
 
 <script lang="ts">
-  export let name: string
-  export let description: string
-  export let tags: string[]
-  export let logo: string
-  export let link: string
+    export let name: string
+    export let description: string
+    export let tags: string[]
+    export let logo: string
+    export let link: string
 </script>
 
 <li>
-  <a href="{link}" title="{description}">
-    {#if logo}
-      <img class="logo" src="{logo}" alt="{name} logo" />
-    {/if}
-    {name}
-  </a>
+    <a href="{link}" title="{description}">
+        {#if logo}
+            <img class="logo" src="{logo}" alt="{name} logo"/>
+        {/if}
+        {name}
+    </a>
 </li>
 
 <style>
-  .logo {
-    width: 32px;
-    margin-right: 8px;
-  }
+    .logo {
+        width: 32px;
+        margin-right: 8px;
+    }
 </style>
