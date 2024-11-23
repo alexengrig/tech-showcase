@@ -1,0 +1,9 @@
+.git
+.gitignore
+.idea
+.editorconfig
+tech-showcase.iml
+.svelte-kit
+node_modules
+build
+.npmrc
